@@ -44,7 +44,7 @@ function Hero() {
                     <span className="text-xs shrink-0">Connect with me</span>
                     <div className="flex flex-wrap justify-center gap-2 md:justify-start">
                         <a
-                            href="https://www.linkedin.com"
+                            href="https://www.linkedin.com/in/inioluwa-aina/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="p-3.5 border rounded-2xl border-slate-400 transition-colors hover:border-violet-400 hover:text-violet-300"

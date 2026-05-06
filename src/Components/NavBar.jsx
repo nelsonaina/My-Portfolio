@@ -17,7 +17,7 @@ function NavBar() {
         <nav className="sticky top-0 z-50 bg-slate-950/95 backdrop-blur-sm border-b-2 border-slate-800 font-mono">
             <div className="max-w-6xl mx-auto flex justify-between items-center gap-3 p-3">
                 <a
-                    href="#hero"
+                    href=""
                     className="flex items-center shrink-0 min-w-0"
                     onClick={closeMenu}
                 >

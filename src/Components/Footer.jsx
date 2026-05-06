@@ -52,7 +52,7 @@ function Footer() {
 
                         <div className="flex gap-3 md:justify-end">
                             <a
-                                href="https://www.linkedin.com"
+                                href="https://www.linkedin.com/in/inioluwa-aina/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="LinkedIn"
