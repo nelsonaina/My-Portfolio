@@ -26,14 +26,8 @@ npm run preview  # preview production build locally
 npm run lint     # run ESLint
 ```
 
-## Deploy
-
-This is a static site after build (output in `dist/`).
 
 
-### Netlify
 
-- Build command: `npm run build`
-- Publish directory: `dist`
 
 
