@@ -1,6 +1,7 @@
 import proj from "../Information/projIndex";
 import { FaArrowRight } from "react-icons/fa";
 import { HiExternalLink } from "react-icons/hi";
+import { Link } from "react-router-dom"
 
 function Projects() {
     const langColor = {
@@ -28,7 +29,7 @@ function Projects() {
                             Featured Projects
                         </p>
                     </div>
-                    <div>
+                    <Link to="/designs">
                         <a
                             href="#contacts"
                             className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-500/50 bg-transparent px-4 py-2.5 text-sm text-slate-200 transition-colors hover:border-violet-400/80 hover:text-white"
@@ -36,7 +37,7 @@ function Projects() {
                             View All Projects
                             <FaArrowRight className="shrink-0 text-xs" aria-hidden />
                         </a>
-                    </div>
+                    </Link>
                 </div>
 
                 {/* cards */}

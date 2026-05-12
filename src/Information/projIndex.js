@@ -38,6 +38,42 @@ const proj = [
         ],
         link:"https://github.com/nelsonaina/FilteredBackProjection"
     },
+    {
+        key: 4,
+        title: "NextJob - Job Search Platform",
+        desc: "A responsive job search platform that allows users to browse and filter job opportunities by location and industry",
+        img: img1,
+        language: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+        ],
+        link:"https://nelsonaina.github.io/NextJob/"
+    },
+    {
+        key: 5,
+        title: "NextJob - Job Search Platform",
+        desc: "A responsive job search platform that allows users to browse and filter job opportunities by location and industry",
+        img: img1,
+        language: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+        ],
+        link:"https://nelsonaina.github.io/NextJob/"
+    },
+    {
+        key: 6,
+        title: "NextJob - Job Search Platform",
+        desc: "A responsive job search platform that allows users to browse and filter job opportunities by location and industry",
+        img: img1,
+        language: [
+            "HTML",
+            "CSS",
+            "JavaScript",
+        ],
+        link:"https://nelsonaina.github.io/NextJob/"
+    },
     
 ];
 
