@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { FaDownload } from "react-icons/fa6";
 import { MdClose, MdMenu, MdOutlineArrowOutward } from "react-icons/md";
 
@@ -8,6 +9,9 @@ const linkClass =
 const resumeHref = "/myresume.pdf";
 const resumeDownloadName = "InioluwaAinaResume.pdf";
 
+/** Always target Home sections, so links work from /designs and any future routes. */
+const homeSection = (id) => `/#${id}`;
+
 function NavBar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -16,28 +20,28 @@ function NavBar() {
     return (
         <nav className="sticky top-0 z-50 bg-slate-950/95 backdrop-blur-sm border-b-2 border-slate-800 font-mono">
             <div className="max-w-6xl mx-auto flex justify-between items-center gap-3 p-3">
-                <a
-                    href=""
+                <Link
+                    to="/"
                     className="flex items-center shrink-0 min-w-0"
                     onClick={closeMenu}
                 >
                     <span className="text-white">Aina.</span>
                     <span className="text-slate-400">Dev</span>
-                </a>
+                </Link>
 
                 <div className="hidden md:flex items-center text-xs gap-1 lg:gap-3">
-                    <a className={linkClass} href="#projects">
+                    <Link className={linkClass} to={homeSection("projects")}>
                         Projects
-                    </a>
-                    <a className={linkClass} href="#skills">
+                    </Link>
+                    <Link className={linkClass} to={homeSection("skills")}>
                         Skills
-                    </a>
-                    <a className={linkClass} href="#about">
+                    </Link>
+                    <Link className={linkClass} to={homeSection("about")}>
                         About
-                    </a>
-                    <a className={linkClass} href="#contacts">
+                    </Link>
+                    <Link className={linkClass} to={homeSection("contacts")}>
                         Contacts
-                    </a>
+                    </Link>
                 </div>
 
                 <div className="hidden md:flex text-xs p-1 gap-2 lg:gap-3 shrink-0">
@@ -80,34 +84,34 @@ function NavBar() {
                     id="mobile-nav"
                     className="md:hidden border-t border-slate-800 bg-slate-950 px-3 py-4 flex flex-col gap-1 text-sm"
                 >
-                    <a
+                    <Link
                         className={`${linkClass} block`}
-                        href="#projects"
+                        to={homeSection("projects")}
                         onClick={closeMenu}
                     >
                         Projects
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className={`${linkClass} block`}
-                        href="#skills"
+                        to={homeSection("skills")}
                         onClick={closeMenu}
                     >
                         Skills
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className={`${linkClass} block`}
-                        href="#about"
+                        to={homeSection("about")}
                         onClick={closeMenu}
                     >
                         About
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className={`${linkClass} block`}
-                        href="#contacts"
+                        to={homeSection("contacts")}
                         onClick={closeMenu}
                     >
                         Contacts
-                    </a>
+                    </Link>
                     <div className="flex flex-col gap-2 pt-3 mt-2 border-t border-slate-800">
                         <a
                             href={resumeHref}

@@ -1,7 +1,7 @@
 import proj from "../Information/projIndex";
 import { FaArrowRight } from "react-icons/fa";
 import { HiExternalLink } from "react-icons/hi";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function Projects() {
     const langColor = {
@@ -15,7 +15,7 @@ function Projects() {
         <>
             <section
                 id="projects"
-                className="scroll-mt-24 border-t border-white/6 bg-[#050816] py-12 text-white"
+                className="scroll-mt-24 border-t border-white/6 bg-slate-940 py-12 text-white"
             >
                 <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
                     <div>
@@ -35,7 +35,10 @@ function Projects() {
                             className="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-500/50 bg-transparent px-4 py-2.5 text-sm text-slate-200 transition-colors hover:border-violet-400/80 hover:text-white"
                         >
                             View All Projects
-                            <FaArrowRight className="shrink-0 text-xs" aria-hidden />
+                            <FaArrowRight
+                                className="shrink-0 text-xs"
+                                aria-hidden
+                            />
                         </a>
                     </Link>
                 </div>

@@ -45,7 +45,7 @@ function AboutMe() {
                     </div>
                 </div>
 
-                <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-1 md:min-w-0 md:flex-1">
+                <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-1 md:min-w-0 md:flex-1 cursor-default">
                     <div className={cardClass}>
                         <div className="shrink-0 rounded-full bg-slate-900 p-2">
                             <VscBeaker className="text-xl text-indigo-500" />
